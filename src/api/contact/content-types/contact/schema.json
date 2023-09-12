@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "contact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "message": {
+      "type": "text"
+    },
+    "interestedservice": {
+      "type": "string",
+      "required": true
+    },
+    "phonenumber": {
+      "type": "string",
+      "regex": "^[0-9]*$"
+    }
+  }
+}
